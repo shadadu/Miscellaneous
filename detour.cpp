@@ -1,3 +1,8 @@
+/* Function MinimumDetour(end_at_base) calculates minimum detour distance for one driver to pick up another driver and drop them off.
+   The argument is true if the driver doing the picking is required to end at their own destination at end of drive
+*/
+
+
 #include <iostream>
 #include <cstdlib>
 #include <string>
@@ -92,7 +97,7 @@ void MinimumDetour(bool end_at_base)
 		ValidRoutes.push_back(CABD);
 	}
 	else
-	{   /* When the driver who does the picking is only required to pass through their destination, not necessary end the journey there */
+	{   /* When the driver who does the picking is only required to pass through their destination, not necessarily end the journey there */
 		ValidRoutes.push_back(ACDB);
 		ValidRoutes.push_back(CABD);
 		ValidRoutes.push_back(ABCD);
