@@ -1,5 +1,7 @@
-/* Function MinimumDetour(end_at_base) calculates minimum detour distance for one driver to pick up another driver and drop them off.
-   The argument is true if the driver doing the picking is required to end at their own destination at end of drive
+/* Function MinimumDetour(end_at_base) calculates minimum detour distance for one driver
+  to pick up another driver and drop them off.
+  The argument is true if the driver doing the picking 
+  is required to end at their own destination at end of drive
 */
 
 
@@ -16,7 +18,7 @@ using namespace std;
 
 
 struct route{
-	/* Vertices are A, B, C, D; longitutes and latitudes are given in degrees */
+	/* Vertices are A, B, C, D. Longitudes and latitudes are given in degrees */
 
 	string route_name;               /* Each route has 4 vertices; the route_name is in order of the vertex traversed */
 	vector<double> longitudes;       /* The order is longitudes of vertex 1, 2, 3, 4 */
